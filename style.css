@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1a2b4c;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
+}
+header {
+  background: linear-gradient(to right, #1a2b4c, #007bff);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 1rem;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hero {
+  background-color: #f0f7ff;
+  padding: 4rem 0;
+  text-align: center;
+}
+h1, h2 {
+  font-weight: 800;
+}
+blockquote {
+  font-style: italic;
+  color: #007bff;
+  margin-top: 1.5rem;
+}
+.light-bg {
+  background-color: #f9f9f9;
+}
+ul {
+  padding-left: 1.5rem;
+}
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.service-list li {
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 1.5rem;
+}
+form input, form textarea, form select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background-color: #0056cc;
+}
+.contact-info {
+  margin-top: 1rem;
+}
+footer {
+  background-color: #1a2b4c;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+a {
+  color: #007bff;
+}
