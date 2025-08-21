@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9ff;
+  color: #333;
+}
+header {
+  background: #003366;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+h1 {
+  color: #003366;
+}
+.hero {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(to right, #66ccff, #003366);
+  color: white;
+}

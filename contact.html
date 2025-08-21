@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isaiah Jones — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page page-contact">
+  <div class="bg-gradient"></div>
+  <header class="nav glass" id="mainNav">
+    <nav class="nav-inner">
+      <a class="brand" href="index.html">Isaiah Jones</a>
+      <button class="nav-toggle" aria-label="Toggle nav">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-link>Home</a></li>
+        <li><a href="about.html" data-link>About</a></li>
+        <li><a href="services.html" data-link>Services</a></li>
+        <li><a href="contact.html" data-link>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact-card card reveal-up">
+      <h2>Contact</h2>
+      <p>If you're interested in pricing or starting online training, any fitness programs or online nutrition coaching, fill out the form below and I’ll get in touch with you ASAP.</p>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label>Name:<input type="text" name="name" required></label>
+        <label>Email:<input type="email" name="email" required></label>
+
+        <label>I'm interested in:</label>
+        <div class="checkbox-row">
+          <label><input type="checkbox" name="interest" value="Personal Training"> Personal Training</label>
+          <label><input type="checkbox" name="interest" value="Fitness Programs"> Fitness Programs</label>
+          <label><input type="checkbox" name="interest" value="Nutrition Coaching"> Nutrition coaching</label>
+        </div>
+
+        <label>Message:<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+
+      <div class="contact-email">📧 Email: <a href="mailto:isaiah0joness@gmail.com">isaiah0joness@gmail.com</a></div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div>© Isaiah Jones</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
