@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isaiah Jones | Apex Virtual Fitness & Nutrition</title>
+  <meta name="description" content="Online Personal Training & Nutrition Coaching by Isaiah Jones. Lifestyle-focused programs, custom workouts, weekly meal plans, and accountability." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>❄️</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="orb orb--c"></div>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div class="grid" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#" data-tab="welcome" aria-label="Isaiah Jones home">
+        <span class="brand__mark">IJ</span>
+        <span class="brand__text">
+          <span class="brand__title">Isaiah Jones</span>
+          <span class="brand__sub">Apex Virtual Fitness & Nutrition</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <button class="tab is-active" data-tab="welcome">Welcome</button>
+          <button class="tab" data-tab="training">Personal Training</button>
+          <button class="tab" data-tab="nutrition">Nutrition Coaching</button>
+          <button class="tab" data-tab="about">About Me</button>
+          <button class="tab tab--cta" data-tab="contact">Contact/Booking</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <div class="hero__left">
+        <div class="pill">
+          <span class="dot"></span>
+          <span>Modern coaching • Real accountability • Lifestyle results</span>
+        </div>
+
+        <h1 class="hero__title">
+          Transform your body with a
+          <span class="shine">healthy, personalized</span>
+          coaching system.
+        </h1>
+
+        <p class="hero__lead">
+          Unique programs, individualized exercises, and specific food items tailored to your goals —
+          muscle gain, fat loss, mobility, endurance, nutrition, and more.
+        </p>
+
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-tab="contact">
+            Start Here
+            <span class="btn__icon">↗</span>
+          </button>
+          <button class="btn btn--ghost" data-tab="training">
+            Explore Training
+          </button>
+        </div>
+
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric__num">300+</div>
+            <div class="metric__label">People helped</div>
+          </div>
+          <div class="metric">
+            <div class="metric__num">16–65</div>
+            <div class="metric__label">Ages coached</div>
+          </div>
+          <div class="metric">
+            <div class="metric__num">Personal Training</div>
+            <div class="metric__label">Since 2021</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="card card--big">
+          <div class="card__header">
+            <div>
+              <div class="card__kicker">How it works</div>
+              <div class="card__title">A clear plan + real coaching</div>
+            </div>
+            <div class="badge">READY</div>
+          </div>
+
+          <div class="list">
+            <div class="list__item">
+              <span class="chip">Step 1</span>
+              <span>Tell me your goal, schedule, and equipment</span>
+            </div>
+            <div class="list__item">
+              <span class="chip">Step 2</span>
+              <span>Get your plan + weekly updates</span>
+            </div>
+            <div class="list__item">
+              <span class="chip">Step 3</span>
+              <span>Check-ins, feedback, and adjustments</span>
+            </div>
+          </div>
+
+          <div class="card__footer">
+            <button class="btn btn--mini" data-tab="training">Training</button>
+            <button class="btn btn--mini" data-tab="nutrition">Nutrition</button>
+            <button class="btn btn--mini btn--ghost" data-tab="contact">Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel-wrap" aria-label="Website sections">
+      <article class="panel is-active" id="panel-welcome" data-panel="welcome">
+        <div class="panel__grid">
+          <div class="panel__main card">
+            <h2>Welcome</h2>
+            <p>
+              My approach emphasizes the <strong>lifestyle</strong> aspect of fitness through unique programs,
+              individualized exercises, and specific food items tailored to your specific goals or needs.
+              Whether it’s <strong>muscle gain</strong>, <strong>fat loss</strong>, <strong>mobility</strong>,
+              <strong>endurance</strong>, <strong>nutrition</strong> or more!
+            </p>
+            <p>
+              I’ve helped over <strong>300</strong> people feel, look, and move the way they truly want to.
+              I work with ages starting from <strong>16 years old</strong> all the way up to <strong>65</strong>.
+            </p>
+
+            <div class="split">
+              <div class="mini-card">
+                <h3>What you get</h3>
+                <ul>
+                  <li>Weekly updated plan (training + nutrition options)</li>
+                  <li>Accountability + real coaching support</li>
+                  <li>Clear tracking & adjustments based on progress</li>
+                </ul>
+              </div>
+              <div class="mini-card">
+                <h3>Best for</h3>
+                <ul>
+                  <li>Busy schedules & real-life routines</li>
+                  <li>People who want structure + flexibility</li>
+                  <li>Anyone ready to level up habits</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel__side">
+            <div class="card">
+              <h3>Quick links</h3>
+              <div class="quick">
+                <button class="quick__btn" data-tab="training">Personal Training</button>
+                <button class="quick__btn" data-tab="nutrition">Nutrition Coaching</button>
+                <button class="quick__btn" data-tab="about">About Me</button>
+                <button class="quick__btn quick__btn--cta" data-tab="contact">Contact / Booking</button>
+              </div>
+            </div>
+
+            <div class="card callout">
+              <div class="callout__top">
+                <div class="spark" aria-hidden="true">✦</div>
+                <div>
+                  <div class="callout__title">Lifestyle-first coaching</div>
+                  <div class="muted">Simple systems. Consistent results.</div>
+                </div>
+              </div>
+              <p class="muted">
+                Your plan adapts with your progress — so you’re never stuck guessing what to do next.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-training" data-panel="training">
+        <div class="card">
+          <h2>Personal Training</h2>
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Customized Workout Plans</h3>
+              <p>You will receive new workouts and exercises every week — tailored to your individual needs and goals.</p>
+            </div>
+            <div class="feature">
+              <h3>Progress Tracking</h3>
+              <p>Tools to monitor performance, track results, and adjust as needed.</p>
+            </div>
+            <div class="feature">
+              <h3>Communication Channels</h3>
+              <p>Direct interaction through messaging, calls, and video calls for support and accountability.</p>
+            </div>
+            <div class="feature">
+              <h3>Technique Correction</h3>
+              <p>Clients submit workout videos for feedback on form and technique.</p>
+            </div>
+            <div class="feature">
+              <h3>Mobile Learning</h3>
+              <p>Importance, resources, and personal knowledge for what you want and need to learn.</p>
+            </div>
+            <div class="feature">
+              <h3>Digital Workouts</h3>
+              <p>Every exercise, reps, weight, speed, rest time, and focus — plus videos for each movement.</p>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <div>
+              <h3 class="cta-row__title">Ready to start training?</h3>
+              <p class="muted">Send your goals + schedule and I’ll tell you the best way to begin.</p>
+            </div>
+            <button class="btn btn--primary" data-tab="contact">Contact / Booking</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-nutrition" data-panel="nutrition">
+        <div class="card">
+          <h2>Nutrition Coaching</h2>
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Personalized Meal Plans</h3>
+              <p>New meal plans every week tailored to your needs and preferences (macro targets, metabolism, energy, body composition).</p>
+            </div>
+            <div class="feature">
+              <h3>Nutritional Education</h3>
+              <p>Learn macros, micros, portion control, labels, ingredients — and how foods affect your body so you can make informed choices.</p>
+            </div>
+            <div class="feature">
+              <h3>Habit Formation</h3>
+              <p>Build sustainable eating patterns and overcome emotional eating/drinking, late-night & sweet cravings, processed/fast foods.</p>
+            </div>
+            <div class="feature">
+              <h3>Ongoing Support</h3>
+              <p>Weekly check-ins, feedback, and adjustments with messaging, calls, and video calls.</p>
+            </div>
+            <div class="feature">
+              <h3>Progress Tracking</h3>
+              <p>Monitor weight, body composition, body fat %, muscle mass % and more.</p>
+            </div>
+            <div class="feature">
+              <h3>Built for real life</h3>
+              <p>We keep it practical — structure + flexibility so you can stay consistent.</p>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <div>
+              <h3 class="cta-row__title">Want a plan that fits you?</h3>
+              <p class="muted">Tell me your goal and what your weekdays look like.</p>
+            </div>
+            <button class="btn btn--primary" data-tab="contact">Contact / Booking</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-about" data-panel="about">
+        <div class="panel__grid">
+          <div class="panel__main card">
+            <h2>About Me</h2>
+            <p>
+              With over <strong>4 years of experience</strong>, I’ve worked with clients both in-person and online.
+              I hold my certification in personal training through the <strong>American Council on Exercise (ACE)</strong>.
+              I hold my certification in nutrition through <strong>International Sports Sciences Association (ISSA)</strong>.
+            </p>
+            <p>
+              My past experience includes <strong>2+ years at Crunch Fitness</strong> as a personal trainer and nutrition coach,
+              and <strong>2+ years at Gold's Gym</strong> as a personal trainer, nutrition coach, and fitness instructor.
+              I’m currently doing all online training, which I started in <strong>2025</strong>.
+            </p>
+
+            <div class="timeline">
+              <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><div class="timeline__title">ACE Certified</div><div class="muted">Personal Training</div></div></div>
+              <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><div class="timeline__title">ISSA Certified</div><div class="muted">Nutrition</div></div></div>
+              <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><div class="timeline__title">Crunch Fitness</div><div class="muted">2+ years • Trainer + Nutrition Coach</div></div></div>
+              <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><div class="timeline__title">Gold’s Gym</div><div class="muted">2+ years • Trainer + Nutrition Coach + Instructor</div></div></div>
+              <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><div class="timeline__title">Online Coaching</div><div class="muted">Since 2025</div></div></div>
+            </div>
+          </div>
+
+          <aside class="panel__side">
+            <div class="card statcard">
+              <h3>Coaching Focus</h3>
+              <ul class="checklist">
+                <li>Strength + muscle gain</li>
+                <li>Fat loss + body recomposition</li>
+                <li>Mobility + movement quality</li>
+                <li>Nutrition strategy + habits</li>
+              </ul>
+              <button class="btn btn--primary w-full" data-tab="contact">Book a Call</button>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-contact" data-panel="contact">
+        <div class="panel__grid">
+          <div class="panel__main card">
+            <h2>Contact / Booking</h2>
+            <p class="muted">
+              If you're interested in getting started or want more information about virtual training or nutrition coaching,
+              fill out the form below — then tap <strong>Send via Email</strong>.
+            </p>
+
+            <form class="form" id="contactForm">
+              <div class="form__row">
+                <label>
+                  <span>Name</span>
+                  <input required name="name" type="text" placeholder="Your name" autocomplete="name" />
+                </label>
+
+                <label>
+                  <span>I’m interested in</span>
+                  <select required name="interest">
+                    <option value="" selected disabled>Select one</option>
+                    <option>Personal Training</option>
+                    <option>Nutrition Coaching</option>
+                    <option>Both</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                <span>Message (questions or concerns)</span>
+                <textarea required name="message" rows="5" placeholder="Tell me your goal, schedule, and what you need help with…"></textarea>
+              </label>
+
+              <label>
+                <span>Encounter or connection (if available)</span>
+                <input name="connection" type="text" placeholder="How did you find me? (friend, IG, gym, etc.)" />
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">
+                  Send via Email
+                  <span class="btn__icon">✉</span>
+                </button>
+
+                <button class="btn btn--ghost" type="button" id="copyEmailBtn" aria-live="polite">
+                  Copy Email
+                </button>
+              </div>
+            </form>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card__label">Email</div>
+                <a class="contact-card__value" href="mailto:isaiah0joness@gmail.com">isaiah0joness@gmail.com</a>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__label">Instagram</div>
+                <a class="contact-card__value" href="https://instagram.com/jones.lyfts" target="_blank" rel="noreferrer">@jones.lyfts</a>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card__label">Content</div>
+                <div class="contact-card__value muted">Workouts • Client transformations • Nutrition</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel__side">
+            <div class="card tip">
+              <h3>Fastest reply tip</h3>
+              <p class="muted">Include your goal, current weight/height (optional), schedule, and what equipment you have access to.</p>
+              <div class="divider"></div>
+              <button class="btn btn--mini w-full" data-tab="welcome">Back to Welcome</button>
+            </div>
+
+            <div class="card watermark">
+              <div class="watermark__big">IJ</div>
+              <div class="muted">Online coaching built for real life consistency.</div>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__left">
+        <div class="muted">© <span id="year"></span> Isaiah Jones</div>
+        <div class="muted">Apex Virtual Fitness & Nutrition</div>
+      </div>
+      <div class="footer__right">
+        <a href="mailto:isaiah0joness@gmail.com">Email</a>
+        <a href="https://instagram.com/jones.lyfts" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
