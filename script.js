@@ -1,1 +1,0 @@
-console.log('Apex Virtual Fitness & Nutrition loaded');
